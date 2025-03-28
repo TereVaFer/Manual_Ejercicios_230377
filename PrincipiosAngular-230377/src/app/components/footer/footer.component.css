@@ -1,0 +1,41 @@
+.footer {
+  width: 100%; /* Se expande completamente */
+  height: 60px;
+  background-color: #ffcBdd;
+  color: black;
+  text-align: center;
+  display: flex;
+  justify-content: space-between; /* Espacio entre el texto y los enlaces */
+  align-items: center; /* Centra el contenido verticalmente */
+  font-size: 20px;
+  /* Espaciado horizontal */
+  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
+  overflow: hidden;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%; /* Asegura que se expanda completamente */
+  align-items: center;
+}
+
+.footer nav {
+  display: flex;
+  gap: 15px; /* Espacio entre los enlaces */
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #00bcd4; /* Color de hover */
+}
+
+/* ✅ Cuando el sidebar está oculto */
+.sidebar-hidden .footer {
+  width: 100%;
+}

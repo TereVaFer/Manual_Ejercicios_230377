@@ -1,0 +1,13 @@
+<!-- Solo muestra el login cuando el usuario NO está autenticado -->
+<div *ngIf="!isAuthenticated" class="login-container">
+  <app-login (loginSuccess)="handleLogin()"></app-login>
+</div>
+
+<!-- Muestra la página principal solo cuando el usuario está autenticado -->
+<div *ngIf="isAuthenticated" class="grid-container" [ngClass]="{'sidebar-hidden': !sidebarVisible}">
+  <app-navbar (logoutEvent)="handleLogout()" (activitySelected)="onActivitySelected($event)"></app-navbar>
+  <app-breadcrumb></app-breadcrumb>
+  <app-sidebar (toggleSidebar)="toggleSidebar()" #sidebar></app-sidebar>
+  <app-content></app-content>
+  <app-footer></app-footer>
+</div>

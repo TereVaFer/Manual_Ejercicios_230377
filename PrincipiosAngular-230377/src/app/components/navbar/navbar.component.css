@@ -1,0 +1,47 @@
+/* Especificidad mayor para asegurar que el fondo rosa se aplique */
+nav.navbar {
+    background-color: #ffafcc !important; /* Color de fondo */
+    width: 100%;
+    box-sizing: border-box;
+    height: 50px;
+}
+
+/* Centrar el menú de navegación */
+.navbar-nav {
+    display: flex;
+    justify-content: center; /* Centra los items en el navbar */
+    width: 100%;
+}
+
+/* Espaciado adecuado entre los elementos del menú */
+.navbar-nav .nav-item {
+    margin: 0 30px; /* Añadí márgenes a la izquierda y derecha de cada item */
+}
+
+/* Estilos de los enlaces */
+.navbar-nav .nav-link {
+    color: white;
+    font-weight: 600; /* Añadí algo de peso a la fuente para darle más visibilidad */
+}
+
+/* Estilo de hover para los enlaces */
+.navbar-nav .nav-link:hover {
+    color: black; /* Color de hover */
+}
+
+/* Ajustes para la dropdown */
+.dropdown-menu {
+    padding: 0;
+    max-height: 150px;
+    overflow-y: scroll;
+}
+
+.dropdown-item {
+    font-weight: 500; /* Peso de fuente para los elementos del dropdown */
+}
+
+/* Ajustar el botón del usuario */
+.dropdown-toggle img {
+    width: 30px; /* Ajusté el tamaño de la imagen del usuario */
+    height: 30px;
+}
